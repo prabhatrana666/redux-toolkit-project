@@ -1,6 +1,6 @@
 import "./Main.css";
 import { useDispatch } from "react-redux";
-import {addItem} from "../redux/slice"
+import { addItem, removeItem, clearItem } from "../redux/slice"
 
 const Main = () => {
 
@@ -28,7 +28,9 @@ const Main = () => {
                         sleek modern design for everyday use.
                     </p>
 
-                    <button onClick={()=>dispatch(addItem(1))}>Add to Cart</button>
+                    <button onClick={() => dispatch(addItem(1))}>Add to Cart</button>
+                    <button style={{ background: '#c12121', marginLeft: '5px' }} onClick={() => dispatch(removeItem())}>Remove Item</button>
+                    <button style={{ background: '#1b1485', marginLeft: '5px', marginTop:'5px' }} onClick={() => dispatch(clearItem())}>Clear All</button>
                 </div>
             </div>
         </div>
