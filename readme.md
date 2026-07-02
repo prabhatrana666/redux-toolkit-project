@@ -5,13 +5,15 @@ A beginner-friendly repository demonstrating the fundamentals of **Redux Toolkit
 ---
 
 🌐 Live Demo
+<p align="center">
+  <a href="https://reduxexample6.netlify.app/" target="_blank">
+    <img src="./public/main_image.png" alt="Redux Toolkit Demo" width="900"/>
+  </a>
+</p>
 
-🚀 View the live application here:
-
-🔗 https://reduxexample6.netlify.app/
-
-Replace the above URL with your actual Vercel, Netlify, or GitHub Pages link.
-
+<p align="center">
+  🚀 <a href="https://reduxexample6.netlify.app/">View Live Application</a>
+</p>
 ---
 
 ## 🚀 About the Project
