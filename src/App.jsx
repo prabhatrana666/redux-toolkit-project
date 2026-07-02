@@ -1,9 +1,12 @@
+import Navbar from "./components/Navbar"
+import Main from "./components/Main"
 
 function App() {
 
   return (
     <>
-     <h1>React redux tool kit tutorials</h1>
+     <Navbar />
+     <Main />
     </>
   )
 }
