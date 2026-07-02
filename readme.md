@@ -8,7 +8,7 @@ A beginner-friendly repository demonstrating the fundamentals of **Redux Toolkit
 
 🚀 View the live application here:
 
-🔗 https://your-live-demo-url.vercel.app
+🔗 https://reduxexample6.netlify.app/
 
 Replace the above URL with your actual Vercel, Netlify, or GitHub Pages link.
 
@@ -53,11 +53,9 @@ This repository contains examples and practice projects to help developers under
 ```text
 redux-toolkit-project/
 │── src/
-│   ├── app/
-│   ├── features/
+│   ├── assets/
 │   ├── components/
-│   ├── pages/
-│   ├── store.js
+│   ├── redux/
 │   ├── App.jsx
 │   └── main.jsx
 │
