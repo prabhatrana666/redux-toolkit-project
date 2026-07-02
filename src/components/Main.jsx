@@ -1,10 +1,18 @@
 import "./Main.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem, clearItem } from "../redux/slice"
+import { useEffect } from "react";
+import { fetchProducts } from "../redux/ProductSlice"
 
 const Main = () => {
 
     const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(fetchProducts());
+    }, []);
+
+    const selector = useSelector((state)=>state.products.value)
+    // console.log(selector)
     return (
         <div className="container">
             <h1>React Redux Toolkit Tutorials</h1>
@@ -30,7 +38,7 @@ const Main = () => {
 
                     <button onClick={() => dispatch(addItem(1))}>Add to Cart</button>
                     <button style={{ background: '#c12121', marginLeft: '5px' }} onClick={() => dispatch(removeItem())}>Remove Item</button>
-                    <button style={{ background: '#1b1485', marginLeft: '5px', marginTop:'5px' }} onClick={() => dispatch(clearItem())}>Clear All</button>
+                    <button style={{ background: '#1b1485', marginLeft: '5px', marginTop: '5px' }} onClick={() => dispatch(clearItem())}>Clear All</button>
                 </div>
             </div>
         </div>
@@ -38,3 +46,4 @@ const Main = () => {
 };
 
 export default Main;
+
